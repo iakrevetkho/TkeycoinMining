@@ -9,6 +9,7 @@ RUN apt-get install sudo wget -y
 
 # Create user admin
 RUN useradd -ms /bin/bash  admin
+RUN admin ALL=(ALL) NOPASSWD:ALL
 USER admin
 WORKDIR /home/admin
 

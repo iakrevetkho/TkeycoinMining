@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 
 RUN apt-get update -y
 
-RUN apt-get install sudo wget postgresql xdg-user-dir -y
+RUN apt-get install sudo wget -y
 
 # Create user admin
 RUN useradd -ms /bin/bash  admin

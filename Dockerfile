@@ -1,12 +1,12 @@
 FROM ubuntu:18.04
 
+# For auto tzdata conf
+ENV TZ=Europe/Moscow
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt-get update -y
 
 RUN apt-get install sudo wget -y
-
-# For auto tzdata conf
-ENV TZ=Europe/Moscow
 
 # Create user admin
 RUN useradd -ms /bin/bash  admin

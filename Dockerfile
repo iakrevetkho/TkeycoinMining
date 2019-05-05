@@ -5,6 +5,9 @@ RUN apt-get update -y
 
 RUN apt-get install sudo wget -y
 
+# For auto tzdata conf
+RUN echo "Europe/Moscow" > /etc/timezone 
+
 # Create user admin
 RUN useradd -ms /bin/bash  admin
 RUN echo "admin ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers

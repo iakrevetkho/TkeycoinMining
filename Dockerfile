@@ -7,6 +7,7 @@ RUN apt-get install wget -y
 # Create user admin
 RUN useradd -ms /bin/bash  admin
 USER admin
+WORKDIR ~
 
 RUN wget https://tkeycoin.com/TkeycoinSetup.install
 

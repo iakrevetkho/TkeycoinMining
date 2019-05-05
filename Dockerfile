@@ -6,7 +6,7 @@ RUN apt-get update -y
 RUN apt-get install sudo wget -y
 
 # For auto tzdata conf
-RUN echo "Europe/Moscow" > /etc/timezone 
+ENV TZ=Europe/Moscow
 
 # Create user admin
 RUN useradd -ms /bin/bash  admin

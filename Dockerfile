@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-RUN sudo apt-get update -y
+RUN apt-get update -y
 
 RUN wget https://tkeycoin.com/TkeycoinSetup.install
 

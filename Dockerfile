@@ -18,6 +18,6 @@ WORKDIR /home/admin
 
 RUN wget https://tkeycoin.com/TkeycoinSetup.install
 
-RUN sh TkeycoinSetup.install
+RUN sh TkeycoinSetup.install --quiet
 
 RUN tkeycoind &

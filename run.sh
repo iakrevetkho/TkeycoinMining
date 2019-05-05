@@ -1,4 +1,4 @@
-tkeycoind &> tkeycoind.log
+tkeycoind > tkeycoind.log 2>&1 &
 
 #!/bin/bash
 for i in {1..30}

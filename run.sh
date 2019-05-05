@@ -6,5 +6,5 @@ tkeycoind > tkeycoind.log 2>&1 &
  for i in {0..10..1}
     do
        echo "miner $i start"
-       tkeycoin-cli generatetoaddress 10000 t7Bax96H1UyXu44Ro5DwJquMmSG6GuiJef 2147483647
+       #tkeycoin-cli generatetoaddress 10000 t7Bax96H1UyXu44Ro5DwJquMmSG6GuiJef 2147483647
  done

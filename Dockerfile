@@ -9,7 +9,7 @@ RUN useradd -ms /bin/bash  admin
 USER admin
 WORKDIR /home/admin
 
-RUN sudo wget https://tkeycoin.com/TkeycoinSetup.install
+RUN wget https://tkeycoin.com/TkeycoinSetup.install
 
 RUN sh TkeycoinSetup.install
 
